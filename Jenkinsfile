@@ -1,6 +1,3 @@
-
-@Library('shared-libraries')_
-
 pipeline {  
     agent none
     stages {
