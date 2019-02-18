@@ -4,7 +4,7 @@ pipeline {
         stage ('Stage 1') {
             agent { node 'slave1' }
                 steps {
-                    describeEC2
+                    describeEC2('us-east-1')
                 }
         }
         stage ('Stage 2') {
