@@ -10,7 +10,7 @@ pipeline {
         stage ('Stage 2') {
             agent { node 'slave2' }
                 steps {
-                   sayHello "Bobarino2"
+                    describeEC2 'us-east-2'
                 }
         }
     }
