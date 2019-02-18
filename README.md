@@ -1,1 +1,1 @@
-Contains a curated list of declarative jenkins modules
+Contains custom Jenkins libraries that can be called from Jenkins pipelines.
