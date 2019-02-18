@@ -4,13 +4,13 @@ pipeline {
         stage ('Stage 1') {
             agent { node 'slave1' }
                 steps {
-                    awsCLI 'ec2 describe-instances' 'us-east-1'
+                    awsCLI 'us-east-1','ec2 describe-instances' 
                 }
         }
         stage ('Stage 2') {
             agent { node 'slave2' }
                 steps {
-                    awsCLI 'ec2 describe-instances' 'us-east-2'
+                    awsCLI 'us-east-2','ec2 describe-instances'
                 }
         }
     }
