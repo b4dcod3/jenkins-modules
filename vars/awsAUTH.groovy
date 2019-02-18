@@ -11,7 +11,8 @@ def call() {
        """
        aws configure set aws_access_key_id `echo \${AWS_ACCESS_KEY_ID}`
        aws configure set aws_secret_access_key `echo \${AWS_SECRET_ACCESS_KEY}`
-       ""
+
+       """
       }
   
 }
