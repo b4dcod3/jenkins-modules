@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String region = 'us-east-1', String aws_command = 'ec2 describe-instances') {
+def call(String region, String aws_command) {
     withCredentials([[
       $class: 'AmazonWebServicesCredentialsBinding',
       credentialsId: 'aws_credentials',
