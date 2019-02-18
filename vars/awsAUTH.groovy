@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call() {
+def call(String region) {
     withCredentials([[
       $class: 'AmazonWebServicesCredentialsBinding',
       credentialsId: 'aws_credentials',
