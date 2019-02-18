@@ -4,7 +4,7 @@ pipeline {
         stage ('Stage 1') {
             agent { node 'slave1' }
                 steps {
-                    sayHello 'Bobarino1'
+                    describeEC2
                 }
         }
         stage ('Stage 2') {
