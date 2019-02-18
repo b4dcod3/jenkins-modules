@@ -4,7 +4,7 @@ pipeline {
         stage ('Configure AWS auth') {
             agent { node 'slave1' }
                 steps {
-                    awsAUTH 'us-east-1'
+                    awsAUTH()
                 }
         }
         stage ('Describe Instances') {
