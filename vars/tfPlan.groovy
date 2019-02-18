@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
 def call() {
-  /usr/bin/terraform plan -no-color
+  /usr/local/bin/terraform plan -no-color
 }
